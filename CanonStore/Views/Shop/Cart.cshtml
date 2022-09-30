@@ -1,0 +1,63 @@
+﻿@model List<CanonStore.Models.ItemCart>
+@{
+    Layout = "~/Views/Shared/ShopLayout.cshtml";
+}
+
+<div class="main">
+    <h1>Produts On Cart</h1><br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Images</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Line Total</th>
+                <th scope="col">Action</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr>
+
+                    <td> <a href="~/Shop/ProductDetails/@item.Producti.Id"> @item.Producti.Name</a></td>
+                    <td>
+                        <a href="~/Shop/ProductDetails/@item.Producti.Id">
+                            <img src="~/Content/image/@item.Producti.Image" alt="Alternate Text" style="width:150px; height:130px" />
+                        </a>
+                    </td>
+
+                    <td>@item.Producti.Brand</td>
+                    <td>@item.Producti.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.LineTotal</td>
+
+                    <td>
+                        <div class="delete_itemcart">
+                            <a href="~/Shop/DeleteItemCart/@item.Producti.Id">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </td>
+
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+    <div class="cart_total">
+        <p>Total : @ViewBag.Total </p>
+    </div>
+    <div class="pay_btn">
+        <a href="~/Shop/Payment">
+            <input type="button" name="name" value="Payment" />
+        </a>
+    </div>
+</div>

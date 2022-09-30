@@ -1,0 +1,39 @@
+﻿@model List<CanonStore.Models.Bill>
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="main">
+    <h1>Bill</h1><br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date Created</th>
+                @*<th scope="col">Id Customer</th>
+                <th scope="col">Id Emloyee</th>*@
+                <th scope="col">Total</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th scope="row">@item.IdBill</th>
+                <td>@item.Date_Created</td>
+                @*<td>@item.IdCustomer</td>
+                <td>@item.IdEmloyee</td>*@
+                <td>@item.Total</td>
+                <td><a href="~/Admin/BillEdit/@item.IdBill">Check</a> </td>
+                <td>
+                    <a href="~/Admin/BillDetail/@item.IdBill">Details</a> |
+                    <a href="~/Admin/CustomerDelete/@item.IdBill">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

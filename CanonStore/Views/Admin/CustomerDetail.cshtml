@@ -1,0 +1,57 @@
+﻿@model CanonStore.Models.Customer
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="main">
+    <h1>Customers</h1><br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Day Of Birth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">@Model.id</th>
+                <td>@Model.Name</td>
+                <td>@Model.Address</td>
+                <td>@Model.Phone</td>
+                <td>@Model.DayOfBirth</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <h1>Bill</h1><br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date Created</th>
+                <th scope="col">Total</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.bills)
+            {
+                <tr>
+                    <th scope="row">@item.IdBill</th>
+                    <td>@item.Date_Created</td>
+                    <td>@item.Total</td>
+                    <td>
+                        <a href="~/Admin/BillDetail/@item.IdBill">Details</a> |
+                        <a href="~/Admin/BillDelete/@item.IdBill">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,25 @@
+﻿@model List<CanonStore.Models.Product>
+@{
+    Layout = "~/Views/Shared/ShopLayout.cshtml";
+}
+
+
+<div class="main">
+
+    <div class="product_list">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="single_product">
+                    <div class="single_product_shop">
+                        <a href="~/Shop/ProductDetails/@item.Id"><img src="~/Content/image/@item.Image" alt=""></a>
+                        <p><a href=""> @item.Name </a></p>
+                        <p> @item.Price VND</p>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

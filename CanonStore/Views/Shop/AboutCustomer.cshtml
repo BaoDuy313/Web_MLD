@@ -1,0 +1,28 @@
+﻿@model CanonStore.Models.Customer
+@{
+    Layout = "~/Views/Shared/ShopLayout.cshtml";
+}
+
+<div class="main">
+    <div class="about_era">
+        <div class="about_item">
+            <div class="item_info">
+                <ul>
+                    <li><p>@Model.Name</p></li>
+                    <li><p>@Model.Phone</p></li>
+                    <li><p>@Model.Address</p></li>
+                    <li><p>@Model.DayOfBirth</p></li>
+                </ul>
+
+            </div>
+            <div class="log_out">
+                <a href="~/Shop/Logout"> 
+                    <input type="button" name="name" value="Log Out" />
+                </a>
+                
+            </div>
+            
+        </div>
+
+    </div>
+</div>

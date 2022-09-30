@@ -1,0 +1,48 @@
+﻿@model CanonStore.Models.Customer
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="main">
+    <div class="form_content">
+        <h2>Edit Customer</h2>
+        <div class="form_product">
+
+            @using (Html.BeginForm("CustomerUpdate", "Admin", FormMethod.Post))
+            {
+                <div class="row">
+
+                    @Html.HiddenFor(m => m.id, new { @class = "form-control" })<br><br>
+                </div>
+
+                <div class="row">
+                    <label for="Name" class="form_label">Customer Name:</label>
+                    <br>
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                    <label for="Adress" class="form_label">Customer Adress:</label>
+                    <br>
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                    <label for="Phone" class="form_label">Customer Phone:</label>
+                    <br>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+                    <br>
+                    <br>
+                </div>
+
+                <div class="btn_row">
+                    <input type="submit" value="Edit Customer" class="btn_addproduct">
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>

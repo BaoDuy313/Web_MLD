@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Nhom7" />
+  <setParameter name="Canon_StoreEntities-Web.config Connection String" value="metadata=res://*/Models.Model_DB_CanonStore.csdl|res://*/Models.Model_DB_CanonStore.ssdl|res://*/Models.Model_DB_CanonStore.msl;provider=System.Data.SqlClient;provider connection string='data source=MSI\SQLEXPRESS;initial catalog=&quot;Canon Store&quot;;user id=sa;password=1;MultipleActiveResultSets=True;App=EntityFramework'" />
+  <setParameter name="Canon_StoreEntities1-Web.config Connection String" value="metadata=res://*/Models.Model_DB_CanonStore.csdl|res://*/Models.Model_DB_CanonStore.ssdl|res://*/Models.Model_DB_CanonStore.msl;provider=System.Data.SqlClient;provider connection string='data source=.\sqlexpress;initial catalog=&quot;Canon Store&quot;;user id=sa;password=1;MultipleActiveResultSets=True;App=EntityFramework'" />
+  <setParameter name="Canon_StoreEntities2-Web.config Connection String" value="metadata=res://*/Models.Model_DB.csdl|res://*/Models.Model_DB.ssdl|res://*/Models.Model_DB.msl;provider=System.Data.SqlClient;provider connection string='data source=MSI\SQLEXPRESS;initial catalog=&quot;Canon Store&quot;;persist security info=True;user id=sa;password=1;MultipleActiveResultSets=True;App=EntityFramework'" />
+  <setParameter name="Canon_StoreEntities3-Web.config Connection String" value="metadata=res://*/Models.ModelDB_CanonStore.csdl|res://*/Models.ModelDB_CanonStore.ssdl|res://*/Models.ModelDB_CanonStore.msl;provider=System.Data.SqlClient;provider connection string='data source=MSI\SQLEXPRESS;initial catalog=&quot;Canon Store&quot;;user id=sa;password=1;MultipleActiveResultSets=True;App=EntityFramework'" />
+</parameters>

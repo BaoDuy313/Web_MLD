@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.yourSessionId = Session["CustomerName"];
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/CSS/_styleShop.css">
+    <title>Camera Shop</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_left">
+
+            </div>
+            <div class="header_logo">
+                <a href="~/Shop/index"><img src="~/Content/image/logo.png" alt=""></a>
+            </div>
+            <div class="header_right">
+                <div id="icon_user">
+                    <a href="~/Shop/Login">
+                        <i class="fa fa-user" style="font-size:24px; color: #616161;"></i>
+                    </a>
+                </div>
+                <div id="icon_search">
+                    <a href="#">
+                        <i class="fa fa-search" style="font-size:24px; color: #616161;"></i>
+                    </a>
+                </div>
+                <div id="icon_cart">
+                    <a href="~/Shop/Cart">
+                        <i class="fa fa-shopping-cart" style="font-size:24px; color: #616161;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="menu">
+                <div class="inner_menu">
+                    <ul>
+                        <li>
+                            <a href="~/Shop/index"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="~/Shop/Products"><span>Product</span></a>
+                        </li>
+                        <li>
+                            <a href="~/Shop/ProductsSearch/1"><span>Camera</span></a>
+                        </li>
+                        <li>
+                            <a href="~/Shop/ProductsSearch/4"><span>Lens</span></a>
+                        </li>
+                        <li>
+                            <a href="~/Shop/AboutUS"><span>About Us</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <div class="footer">
+        <div class="footer_logo">
+            <a href="~/Shop/index"><img src="~/Content/image/logo.png" alt=""></a>
+        </div>
+        <div class="footer_content">
+            <div class="col">
+                <div class="item_footer">
+                    <p class="item_title">Service & Support</p>
+                    <p><a href="">adudu@gmail.com</a></p>
+                    <p><a href="">0123456789</a></p>
+                    <p><a href="">Location</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item_footer">
+                    <p class="item_title">Info</p>
+                    <p><a href=""></a></p>
+                    <p><a href=""></a></p>
+                    <p><a href=""></a></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item_footer">
+                    <p class="item_title">Follow Us</p>
+                    <p><a href=""></a></p>
+                    <p><a href=""></a></p>
+                    <p><a href=""></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="nocopyright">NoCopyRight © ADUDU</div>
+    </div>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+
+</html>

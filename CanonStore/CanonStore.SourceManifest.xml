@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\duyru\Desktop\Hoc tap\2132\Phat trien WEB\BT_baocao\CanonStore_MVC\CanonStore\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\duyru\Desktop\Hoc tap\2132\Phat trien WEB\BT_baocao\CanonStore_MVC\CanonStore\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\duyru\Desktop\Hoc tap\2132\Phat trien WEB\BT_baocao\CanonStore_MVC\CanonStore\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>
